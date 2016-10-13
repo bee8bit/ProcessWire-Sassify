@@ -56,7 +56,7 @@ class Sassify extends WireData implements Module {
         self::$cssFilename     = wire('sanitizer')->name($this->css_filename);
         self::$cssPath         = $this->css_path;
         self::$cssUrl          = $this->css_url;
-        self::$numberPrecision = $this->number_precision;
+        self::$numberPrecision = $this->css_number_precision;
         self::$outputFormat    = $this->sass_formatter;
         self::$templatePath    = wire('config')->paths->templates;
     }
